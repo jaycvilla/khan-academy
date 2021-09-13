@@ -1,0 +1,36 @@
+background(219, 255, 255);
+
+fill(120, 82, 6);
+triangle(200, 28, 350, 150, 50, 150);
+
+
+for(var h=0; h < 10; h++) {
+    var lineY= 144+(h*18);
+    image(getImage("cute/WoodBlock"),62, lineY,278, 25);
+
+}
+
+fill(120, 80, 19);
+rect(180, 280, 40, 77);
+
+for(var i= 0; i < 2; i++) {
+    for (var j = 0; j < 2; j++) {
+        fill(218, 236, 240);
+        var lineX = 100 + (i*150);
+        var lineY = 150 +(j*90);
+        image(getImage("cute/WindowTall"),lineX, lineY, 40, 83);
+       // rect(lineX,lineY,60,50); window dimensions
+    }
+}
+
+for(var k = 0; k < 2; k++) {
+    lineX= 60 +(k*161);
+    image(getImage("cute/GrassBlock"),lineX, 300, 120, 100);
+    image(getImage("cute/TreeUgly"), lineX+10, 300, 40, 80);
+    image(getImage("cute/TreeUgly"), lineX+60, 300, 40, 80);
+}
+
+
+
+image(getImage("cute/StoneBlock"), 179, 330, 45, 80);
+
