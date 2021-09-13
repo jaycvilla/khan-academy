@@ -1,0 +1,42 @@
+fill(0, 0, 0);
+ellipse(200, 200, 375, 375);
+
+var answer = floor(random(0, 6));
+if (answer < 0) {
+    triangle(200, 104, 280, 280, 120, 280);
+    fill(255, 255, 255);
+    text("lucky", 176, 200);
+    text("you", 185, 229); 
+    
+} else if (answer <= 1) {
+    fill(81, 14, 237);
+    triangle(200, 104, 280, 280, 120, 280);
+    fill(0, 0, 0);
+    text("unlucky", 176, 200);
+    text("you", 185,229);
+} else if (answer <= 2) {
+    fill(207, 29, 207);
+    triangle(200, 104, 280, 280, 120, 280);
+    fill(0, 0, 0);
+    text("play", 176, 200);
+    text("lotto", 159, 229);
+} else if (answer <= 3) {
+    fill(232, 221, 14);
+    triangle(200, 104, 280, 280, 120, 280);
+    fill(0, 0, 0);
+    text("dont", 176, 200);
+    text("give up", 159, 229);
+} else if (answer <= 4) {
+    fill(237, 69, 35);
+    triangle(200, 104, 280, 280, 120, 280);
+    fill(0, 0, 0);
+    text("OR", 176, 200);
+    text("MAYBE?", 159, 229);
+} else if (answer <= 5) {
+    fill(245, 178, 35);
+    triangle(200, 104, 280, 280, 120, 280);
+    fill(0, 0, 0);
+    text("not", 190, 215);
+    text("exactly sure", 159, 230);
+    text("whats to come", 159, 245);
+}
