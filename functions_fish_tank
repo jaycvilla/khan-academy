@@ -1,0 +1,50 @@
+background(89, 216, 255);
+var centerX = 200;
+var centerY = 200;
+var bodyLength = 118;
+var bodyHeight = 74;
+var bodyColor = color(162, 0, 255);
+var tailWidth = bodyLength/4;
+var tailHeight = bodyHeight/2;
+
+var drawFish= function(centerX, centerY) {
+noStroke();
+fill(bodyColor); 
+// body
+
+ellipse(centerX, centerY, bodyLength, bodyHeight); 
+// tail
+triangle(centerX-bodyLength/2, centerY,
+         centerX-bodyLength/2-tailWidth, centerY-tailHeight,
+         centerX-bodyLength/2-tailWidth, centerY+tailHeight); // eye
+fill(33, 33, 33);
+ellipse(centerX+bodyLength/4, centerY, bodyHeight/5, bodyHeight/5);
+};
+
+var draw= function(centerX, centerY) {
+noStroke();
+fill(bodyColor); 
+// body
+
+ellipse(centerX, centerY, bodyLength, bodyHeight); 
+// tail
+triangle(centerX-bodyLength/2, centerY,
+         centerX-bodyLength/2-tailWidth, centerY-tailHeight,
+         centerX-bodyLength/2-tailWidth, centerY+tailHeight); // eye
+fill(33, 33, 33);
+ellipse(centerX+bodyLength/4, centerY, bodyHeight/5, bodyHeight/5);
+};
+
+drawFish(random(300),random(300));
+drawFish(random(500),random(100));
+drawFish(random(600),random(600));
+drawFish(random(500),random(500));
+drawFish(random(300),random(300));
+drawFish(random(500),random(100));
+drawFish(random(600),random(600));
+drawFish(random(500),random(500));
+
+mouseClicked = function() {
+   drawFish(mouseX, mouseY); 
+};
+         
