@@ -1,0 +1,74 @@
+var buildingX= 100;
+var buildingY= 160;
+var windowSize= 15;
+
+fill(13, 0, 255);
+textSize(30);
+text("Building Maintenance!", 10, 30);
+
+fill(0, 0, 0);
+textSize(20);
+text("1. 24-7 Maintenance", 10, 70);
+text("2. Manage Tenants", 10, 90);
+text("3. Daily up-keep", 10, 110);
+text("4. Monthly Reports", 10, 130);
+
+fill(133, 133, 112);
+rect(buildingX, 175, 50, 125); // Buildings
+rect(buildingX+50, buildingY, 50, 140);
+rect(buildingX+100, buildingY+40, 50, 100);
+rect(buildingX+150, buildingY+20, 50, 120);
+
+fill(228, 235, 29); //building 1
+rect(buildingX+10, buildingY+25, windowSize, windowSize); // Windows
+rect(buildingX+30, buildingY+25, windowSize, windowSize); 
+rect(buildingX+10, buildingY+50, windowSize, windowSize); // Windows
+rect(buildingX+30, buildingY+50, windowSize, windowSize); 
+rect(buildingX+10, buildingY+75, windowSize, windowSize); // Windows
+rect(buildingX+30, buildingY+75, windowSize, windowSize);
+rect(buildingX+10, buildingY+100, windowSize, windowSize); // Windows
+rect(buildingX+30, buildingY+100, windowSize, windowSize); 
+fill(171, 112, 24);
+rect(buildingX+20, buildingY+120, windowSize, windowSize+5); //door
+
+fill(228, 235, 29); //building 2
+rect(buildingX+60, buildingY+3, windowSize, windowSize); // Windows
+rect(buildingX+80, buildingY+25, windowSize, windowSize); 
+rect(buildingX+80, buildingY+3, windowSize, windowSize); // Windows
+rect(buildingX+80, buildingY+25, windowSize, windowSize);
+rect(buildingX+60, buildingY+25, windowSize, windowSize); // Windows
+rect(buildingX+80, buildingY+25, windowSize, windowSize); 
+rect(buildingX+60, buildingY+50, windowSize, windowSize); // Windows
+rect(buildingX+80, buildingY+50, windowSize, windowSize); 
+rect(buildingX+60, buildingY+75, windowSize, windowSize); // Windows
+rect(buildingX+80, buildingY+75, windowSize, windowSize);
+rect(buildingX+60, buildingY+100, windowSize, windowSize); // Windows
+rect(buildingX+80, buildingY+100, windowSize, windowSize); 
+fill(171, 112, 24);
+rect(buildingX+70, buildingY+120, windowSize, windowSize+5); //door
+
+fill(228, 235, 29); //building 3
+rect(buildingX+110, buildingY+50, windowSize, windowSize); // Windows
+rect(buildingX+130, buildingY+50, windowSize, windowSize); 
+rect(buildingX+110, buildingY+75, windowSize, windowSize); // Windows
+rect(buildingX+130, buildingY+75, windowSize, windowSize);
+rect(buildingX+110, buildingY+100, windowSize, windowSize); // Windows
+rect(buildingX+130, buildingY+100, windowSize, windowSize); 
+fill(171, 112, 24);
+rect(buildingX+120, buildingY+120, windowSize, windowSize+5); //door
+
+fill(228, 235, 29); //building 4
+rect(buildingX+160, buildingY+25, windowSize, windowSize); // Windows
+rect(buildingX+180, buildingY+25, windowSize, windowSize); 
+rect(buildingX+160, buildingY+50, windowSize, windowSize); // Windows
+rect(buildingX+180, buildingY+50, windowSize, windowSize); 
+rect(buildingX+160, buildingY+75, windowSize, windowSize); // Windows
+rect(buildingX+180, buildingY+75, windowSize, windowSize);
+rect(buildingX+160, buildingY+100, windowSize, windowSize); // Windows
+rect(buildingX+180, buildingY+100, windowSize, windowSize); 
+fill(171, 112, 24);
+rect(buildingX+170, buildingY+120, windowSize, windowSize+5); //door
+
+textSize(35);
+fill(168, 32, 32);
+text("Call for Rates!", 10, 350);
