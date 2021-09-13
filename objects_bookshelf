@@ -1,0 +1,35 @@
+var book = [
+    {
+        title: "I Know Why the Caged Bird Sings",
+        author: "C.H",
+        starNum: 5
+    },
+    {
+        title: "What a Woman Wants",
+        author: "Harry C.K.",
+        starNum: 3
+    },
+    {
+        title: "Jaws",
+        author: "Chuck Norris",
+        starNum: 4
+    }
+];
+
+// draw shelf
+fill(173, 117, 33);
+rect(0, 120, width, 10);
+
+
+// draw one book
+for (var i=0; i < book.length; i++) {
+    fill(214, 255, 219);
+    rect(i*100, 20, 90, 100);
+    fill(0,0,0);
+    text(book[i].title, i*100+10, 29, 70, 145);
+    text(book[i].author, i*100+10, 75, 70, 145);
+        for(var j = 0; j < book[i].starNum; j++) {
+            image(getImage("cute/Star"), -30+ book[i].starNum*15,90,10, 15);
+        }
+    
+}
